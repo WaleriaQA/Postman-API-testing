@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "6369dd3c-5334-46ea-b119-37264880dbbe",
+		"name": "Yandex",
+		"description": "**Practical example**\n\n<img src=\"https://content.pstmn.io/e11450a1-f7ce-4cf5-a392-34f6ae9cebde/YmVsZ3JhZGUucG5n\" alt=\"\">",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15098717"
+	},
+	"item": [
+		{
+			"name": "Stations List",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e5c9ee84-3693-4b63-9fc0-7f476a0ae3ef",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.rasp.yandex.net/v3.0/stations_list/?lang=ru_RU&format=json",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rasp",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v3.0",
+						"stations_list",
+						""
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "ru_RU"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flying from Belgrad",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "e5c9ee84-3693-4b63-9fc0-7f476a0ae3ef",
+							"type": "string"
+						},
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apikey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rasp.yandex.net/v3.0/search/?from=c10522&to=c213&lang=ru_RU&page=1&date=2023-07-31",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rasp",
+						"yandex",
+						"net"
+					],
+					"path": [
+						"v3.0",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "c10522"
+						},
+						{
+							"key": "to",
+							"value": "c213"
+						},
+						{
+							"key": "lang",
+							"value": "ru_RU"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "date",
+							"value": "2023-07-31"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
